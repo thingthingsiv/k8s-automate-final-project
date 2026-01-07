@@ -1,0 +1,2 @@
+kube_proxy_mode: ipvs
+kube_proxy_strict_arp: true

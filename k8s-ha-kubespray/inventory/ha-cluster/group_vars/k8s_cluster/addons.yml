@@ -1,0 +1,4 @@
+ingress_nginx_enabled: true
+kubernetes_dashboard_enabled: true
+helm_enabled: true
+metrics_server_enabled: true

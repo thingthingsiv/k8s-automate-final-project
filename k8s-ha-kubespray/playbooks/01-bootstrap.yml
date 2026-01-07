@@ -1,0 +1,11 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: Install base packages
+      apt:
+        name:
+          - python3
+          - python3-pip
+          - sshpass
+        state: present
+        update_cache: yes
