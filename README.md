@@ -1,5 +1,3 @@
-ere is a complete, single-file README.md that you can copy. It includes the architecture overview, the automation script, and the configuration steps for your domains.Markdown# Fully Automated HA Kubernetes Cluster (Kubespray)
-
 This project provides a zero-manual-work solution to deploy a High Availability (HA) Kubernetes cluster using Kubespray. It includes automated installation of the K8s Dashboard and ArgoCD with custom domain mapping.
 
 ## 🏗️ Cluster Architecture
@@ -39,3 +37,5 @@ kubectl create ingress argocd-server --rule="[argocd.yourdomain.com/*=argocd-ser
 --extra-vars "ansible_timeout=60" \
 cluster.yml
 📝 Important NotesTLS Handshake Errors: If the play fails at Calico again, ensure your VMs have at least 2 vCPUs and 4GB RAM. The API server times out when resources are too low.Firewall: Ensure ports 6443, 2379-2380 (etcd), and 10250 are open between all nodes.DNS: Point your A-records for the domains above to the IP of any node in the cluster (or your Load Balancer IP).
+
+# By Siv Thingthing
